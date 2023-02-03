@@ -7,7 +7,13 @@
 html {
     font-family: Comic Sans, cursive;
     font-size: 16px;
-    margin: auto;
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
 }
 
 img {
@@ -23,14 +29,8 @@ header {
     margin: 80px 0px 0px;
 }
 
-p {
-    width: 800px;
-    position: relative;
-    left: 10px;
-}
-
-.banner>h1 {
-    font-size: 42px;
+.banner > h1 {
+    font-size: 41px;
     font-style: italic;
     font-weight: lighter;
     position: relative;
@@ -42,16 +42,33 @@ p {
 .h2 {
     text-align: center;
     font-style: normal;
+    font-size: 26px;
     font-weight: bold;
     width: 1080px;
-    position: relative;
-    top:-35px;
+    position: absolute;
+    top:280px;
     padding: 0px 20px ;
     border: 2px solid black;
 }
 
 h3 {
     font-style: italic;
+}
+
+p {
+    position: relative;
+    left: 30px;
+}
+
+span {
+    font-weight: bold;
+    font-style: normal;
+}
+
+.title > h3 {
+text-align: center;
+font-style: normal;
+font-weight: lighter;
 }
 
 div.banner {
@@ -66,9 +83,8 @@ div.banner {
 
 nav {
     position: relative;
-    left: 1000px;
+    left: 560px;
     top: -220px;
-    height: 0px;
     display: inline-block;
 }
 
@@ -81,41 +97,83 @@ nav > a {
     border: 2px solid black;
     box-shadow: 3px 3px 2px gray;
     display: inline-block;
-
 }
 
 nav > a:hover {
     background-color:green
 }
 
-article > div {
-    text-align: left;
-    width: 500px;
+
+.article {
+    position: relative;
+    top: 50px;
+    width: 920px;
+}
+
+#table {
     position: relative;
     left: 200px;
-    top: 0px;
-    line-height: 26px;
 }
 
-article img, .inline {
-    display: inline-block;
+#rules {
+    position: relative;
+    left: 60px;
 }
 
-article .logo {
-    position: absolute;
-    top: 330px;
-    left: 230px;
+.container {
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:start;
+    align-content: start;
+    gap: 30px;
+}
+.containerrules {
+    height: 100vh;
+    display: flex;
+    background-color: white;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: left;
+    align-items:start;
+    align-content: start;
+    gap: 20px;
 }
 
-div >.text {
+.container > div, .text {
     margin-bottom: 20px;
 }
 
-#contact {
+/*table*/
+caption {
+    padding: 1rem;
+    color: black;
     text-align: left;
-    width: 500px;
-    position: relative;
-    left: 40px;
-    top: -80px;
-    line-height: 26px;
+    text-decoration: underline;
+}
+
+table {
+    padding: 1rem;
+    margin: auto;
+}
+
+thead {
+    border: 1px solid black;
+    background-color: ;
+    color: ;
+}
+
+tbody {
+    padding: 2rem;
+}
+
+th {
+    padding: 1rem;
+}
+
+td {
+    padding: 1rem;
 }

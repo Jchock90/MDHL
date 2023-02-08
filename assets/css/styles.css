@@ -5,74 +5,65 @@
 }
 
 html {
-    font-family: Comic Sans, cursive;
-    font-size: 16px;
+    font-family: "Comic Sans", cursive;
+    width: 100%;
     height: 100vh;
     display: flex;
-    background-color: white;
-    flex-direction: row;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
 }
 
 img {
-    max-width: 100%;;
+    max-width: 100%;
+    max-height: 100%;
 }
+/* mobile */
 
 main {
-    width: 1080px;
-    margin: auto;
+    display: flex;
+    flex-direction: column-reverse;
 }
+
 
 header {
     margin: 80px 0px 0px;
 }
 
 .banner > h1 {
-    font-size: 41px;
+    font-size: 20px;
     font-style: italic;
     font-weight: lighter;
     position: relative;
-    top: -60px;
+    top: -30px;
     left: 0px;
     display: inline-block;
 }
 
 .h2 {
+    position: absolute;
     text-align: center;
     font-style: normal;
-    font-size: 26px;
+    font-size: 16px;
     font-weight: bold;
-    width: 1080px;
-    position: absolute;
-    top:280px;
+    margin: 0 auto;
+    width: 360px;
+    top: 280px;
     padding: 0px 20px ;
     border: 2px solid black;
 }
 
 h3 {
-    font-style: italic;
-}
-
-p {
-    position: relative;
-    left: 30px;
-}
-
-span {
-    font-weight: bold;
     font-style: normal;
+    font-size: 11px;
+    font-weight: lighter;
+    margin: 5px;
+
 }
 
-.title > h3 {
-text-align: center;
-font-style: normal;
-font-weight: lighter;
-}
 
 div.banner {
-    width: 1080px;
+    width: 360px;
     height: 200px;
     margin: auto;
     background-image: url(../img/image1.jpg);
@@ -82,98 +73,335 @@ div.banner {
 }
 
 nav {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
     position: relative;
-    left: 560px;
-    top: -220px;
-    display: inline-block;
+    top: -202px;
 }
 
 nav > a {
+    display: flex;
+    flex-wrap: wrap;
     background-color: royalblue;
     color: white;
     text-decoration: none;
-    padding: 5px 15px;
-    margin: 5px;
-    border: 2px solid black;
+    font-size: 8px;
+    padding: 5px 10px;
+    margin: 1px;
+    border: 1px solid black;
     box-shadow: 3px 3px 2px gray;
-    display: inline-block;
+
 }
 
 nav > a:hover {
-    background-color:green
+    background-color: green;
 }
 
 
-.article {
-    position: relative;
-    top: 50px;
-    width: 920px;
-}
-
-#table {
-    position: relative;
-    left: 200px;
-}
-
-#rules {
-    position: relative;
-    left: 60px;
-}
 
 .container {
-    height: 100vh;
+    height:  100vh;
+    width: 360px;
     display: flex;
-    background-color: white;
-    flex-direction: row;
     flex-wrap: wrap;
-    justify-content: left;
-    align-items:start;
-    align-content: start;
-    gap: 30px;
-}
-.containerrules {
-    height: 100vh;
-    display: flex;
+    justify-content: center;
+    gap: 5px;
     background-color: white;
-    flex-direction: column;
-    flex-wrap: wrap;
-    justify-content: left;
-    align-items:start;
-    align-content: start;
-    gap: 20px;
+
 }
 
-.container > div, .text {
+.container > div > img {
+    position: relative;
+    left: 120px;
+    margin: 10px;
+}
+
+.container > div {
     margin-bottom: 20px;
+    width: 100vh;
+    font-size: 12px;
 }
 
-/*table*/
+div > h3 {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+div > p {
+    margin-bottom: 3px;
+    position: relative;
+    left: 5px;
+
+}
+li > span {
+    font-weight: bold;
+}
+
+/* table */
 caption {
-    padding: 1rem;
+    padding: 5px;
     color: black;
     text-align: left;
     text-decoration: underline;
+    font-style: italic;
 }
 
 table {
-    padding: 1rem;
-    margin: auto;
-}
-
-thead {
-    border: 1px solid black;
-    background-color: ;
-    color: ;
+    padding: 3px;
+    font-size: 12px;
+    margin: 10px auto;
 }
 
 tbody {
-    padding: 2rem;
+    padding: 3px;
 }
 
 th {
-    padding: 1rem;
+    padding: 3px;
 }
 
 td {
-    padding: 1rem;
+    padding: 8px;
+}
+
+.container > .iframe {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 360px;
+    margin-bottom: 5px;
+    gap: 10px;
+}
+
+div > .tableinfo {
+    width: 360px;
+}
+span {
+    font-weight: bold;
+}
+
+/* form */
+
+fieldset {
+    border: 0;
+}
+
+fieldset > div {
+    width: 360px;
+    margin: 5px auto;
+    padding: 2px;
+    font-size: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: left;
+}
+
+input {
+    border: 0;
+    border-bottom:solid 1px black;
+    font-size: 8px;
+    margin-bottom: 5px;
+    margin-left: 0px;
+}
+
+label {
+    padding-left: 3px;
+}
+legend {
+    font-weight: bold;
+    font-size: 12px;
+}
+
+label > p {
+    font-size: 10px;
+    width: 320px;
+    margin-left: 10px;
+}
+
+label > span {
+    font-weight: bold;
+    font-size: 10px;
+}
+
+fieldset > span {
+    font-size: 10px;
+    font-weight: bold;
+}
+
+fieldset > legend, div, h2, p {
+    margin-bottom: 10px;
+}
+
+/* list */
+
+.list {
+    width: 300PX;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.list > div {
+    display: flex;
+    flex-direction: column;
+    width: 330px;
+    position: relative;
+    left: 20px;
+}
+
+/* tablets */
+
+@media only screen and (min-width: 700px) {
+    .container {
+        height:  100vh;
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center;
+    }
+    .container > div {
+        height: unset;
+        margin-bottom: 0;
+    }
+    .h2 {
+        width: 700px;
+    }
+    div.banner {
+        width: 700px;
+        height: 200px;
+    }
+
+    nav {
+        position: relative;
+        left: 130px;
+        top: -215px;
+    }
+    
+    nav > a {
+        font-size: 10px;
+        padding: 5px 15px;
+        display: inline-block;
+    }
+    .banner > h1 {
+        font-size: 30px;
+        position: relative;
+        top: -56px;
+        left: 0px;
+    }
+
+    .container > div {
+        margin-bottom: 10px;
+        width: 700px;
+    
+    }
+
+    div > h3, p {
+        font-size: 16px;
+    }
+
+    .container > div > img {
+        position: relative;
+        left: 0px;
+        margin: 10px;
+        width: 120px;
+    }
+
+    .text > div {
+        position: relative;
+        top: -120px;
+        left: 130px;
+    }
+
+    /* form */
+
+    fieldset > div {
+        width: 700px;
+        margin: 10px 0px auto;
+        padding: 5px;
+        font-size: 14px;
+    }
+    
+    input {
+        font-size: 10px;
+        margin-bottom: 8px;
+        margin-left: 10px;
+    }
+    
+    label {
+        padding-left: 8px;
+    }
+    legend {
+        font-weight: bold;
+        font-size: 16px;
+        padding: 10px;
+    }
+    
+    label > p {
+        font-size: 16px;
+        width: 700px;
+        margin-left: 0px;
+        padding: 10px;
+    }
+    
+    label > span {
+        font-weight: bold;
+        font-size: 14px;
+    }
+    
+    fieldset > legend, div, h2, p {
+        margin-bottom: 16px;
+    }
+
+    /* table */
+
+    caption {
+        padding: 5px;
+        color: black;
+    }
+    
+    table {
+        padding: 3px;
+        font-size: 16px;
+        margin: 10px auto;
+        width: 700px;
+    }
+   
+    .container > .iframe {
+        display: flex;
+        flex-direction: row;
+        width: 100%;
+        margin-bottom: 5px;
+        gap: 10px;
+    }
+
+    div > .tableinfo > p {
+        width: 700px;
+    }
+   
+
+
+    /* list */
+
+    .list {
+        width: 700px;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .list > div {
+        display: flex;
+        flex-direction: column;
+        width: 650px;
+        position: relative;
+        left: 20px;
+        font-size: 16px;
+    }
+
+    div > p {
+        width: 500px;
+    }
+    
+    
 }
